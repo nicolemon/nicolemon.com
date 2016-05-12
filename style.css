@@ -38,10 +38,6 @@ a, a:link, a:visited, a:hover {
 	font-size: 70%;
 	color: black;
 }
-#pdf a {
-	font-family: inherit;
-	color: black;
-}
 
 #summary {
 	display: block;
@@ -65,6 +61,7 @@ a, a:link, a:visited, a:hover {
 #summary a:hover {
 	text-decoration: none;
 }
+
 #exit {
 	margin: 2.4em; /* always that much space around exit element */
 	display: block;
