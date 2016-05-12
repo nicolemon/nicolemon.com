@@ -1,0 +1,200 @@
+
+/* hi */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 30px;
+}
+
+body {
+	background-color: #FAF7F5;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	line-height: 1.2em;
+}
+
+a, a:link, a:visited, a:hover {
+	background-color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+/*	color: inherit; */
+	text-decoration: none;
+}
+
+
+#cv {
+	margin: auto;
+	position: relative;
+	top: 1.2em; bottom: 0; left: 0; right: 0;
+	text-align: center;
+}
+
+#cv p, #cv > a {
+	font-family: inherit;
+	font-size: 70%;
+	color: black;
+}
+#pdf a {
+	font-family: inherit;
+	color: black;
+}
+
+#summary {
+	display: block;
+	color: black;
+	margin: 2.4em;
+	text-align: justify;
+	clear: both;
+	width: 50%;
+}
+
+#summary p {
+	margin-top: 1.0em;
+	color: black;
+}
+
+#summary a, #summary a:link, #summary a:visited {
+	color: black;
+	text-decoration: underline;
+}
+
+#summary a:hover {
+	text-decoration: none;
+}
+#exit {
+	margin: 2.4em; /* always that much space around exit element */
+	display: block;
+	position: relative;
+	/* 	top: 1.4em;
+	margin-bottom: 2.4em;
+	left: 0; right: 0; */
+	text-align: center;
+	height: 128px;
+	overflow: hidden;
+	clear: both;
+}
+
+#exit li {
+	background-color: white;
+	display: inline;
+	list-style-type: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 128px;
+}
+
+#exit li.linkedin a:hover {
+	background-color: #007FB1;
+}
+
+#exit li.twitter a:hover {
+	background-color: #00ACED;
+}
+
+#exit li.lastfm a:hover {
+	background-color: #D51007;
+}
+
+#exit li.goodreads a:hover {
+	background-color: #5A471B;
+}
+
+#exit li.github a:hover {
+	background-color: #4183C4;
+}
+
+@keyframes exitchange {
+	from {background-color: #000000;}
+	to {left: inherit;}
+}
+
+@-webkit-keyframes exitchange {
+	from {background-color: #000000;}
+	to {background-color: inherit;}
+}
+
+#exit li a, a:link, a:visited {
+	background-color: #000000;
+	transition: background-color 2s;
+	-webkit-transition: background-color 2s;
+}
+
+#photo {
+	position: relative;
+	left: 0; right: 0;
+	text-align: center;
+	display: none;
+}
+
+h1 {
+	color: #FFFFFF;
+	background-color: #000000;
+	margin: 10px 0px 10px 0px;
+}
+
+section {
+	margin-top: 20px;
+}
+
+aside {
+	font-size: 50%;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	bottom: 2.2em;
+
+/*	display: none; */
+}
+
+aside a, a:link, a:visited, a:hover {
+	color: #000000;
+	background-color: inherit;
+}
+
+input {
+	border-bottom: 1px solid #000000;
+	padding: 2px;
+}
+
+video {
+	/* got nothing here for ya */
+}
+
+button {
+	padding: 3px;
+	text-transform: uppercase;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #000000;
+	text-align: center;
+	font-size: 70%;
+	z-index: 1;
+}
+
+nav ul li {
+	display: inline;
+	list-style-type: none;
+}
+
+nav > a, a:link, a:visited, a:hover {
+	color: white;
+	z-index: 1;
+}
+
+footer {
+	position: fixed;
+	margin-top: 10px;
+	bottom: 0px;
+	width: 100%;
+	background-color: #000000;
+	text-align: center;
+	font-size: 70%;
+}
