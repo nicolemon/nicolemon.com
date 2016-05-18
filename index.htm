@@ -1,69 +1,38 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<title>NAM</title>
-		<link href="./style.css" rel="stylesheet" type="text/css">
+  <head>
+    <title>NAM</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-55055506-2', 'auto');
-		  ga('send', 'pageview');
-		</script>
-	</head>
-	<body>
+      ga('create', 'UA-55055506-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
 
-		<nav>
-			Nicole A Montano
-		</nav>
+    <nav>
+      Nicole A Montano
+    </nav>
 
-		<script type=text/javascript>
-		// shows/hides the CV when element is clicked
-		var flag = true;
+    <section id="exit">
+      <ul>
+        <li class="linkedin"><a href="http://www.linkedin.com/pub/nicole-montano/51/b91/998" target="_blank"><img src='./images/linkedin-128.png' alt="linkedin" /></a></li>
+        <li class="github"><a href="http://github.com/nicolemon" target="_blank"><img src='./images/github-128.png' alt="github" /></a></li>
+        <li class="lastfm"><a href="http://last.fm/user/nicolysis" target="_blank"><img src='./images/lastfm-128.png' alt="last.fm" /></a></li>
+        <li class="goodreads"><a href="http://www.goodreads.com/user/show/4608396-nicole" target="_blank"><img src='./images/goodreads-128.png' alt="goodreads" /></a></li>
+        <li class="twitter"><a href="http://www.twitter.com/nicolysis" target="_blank"><img src='./images/twitter-128.png' alt="twitter" /></a></li>
+      </ul>
+    </section>
 
-		function loadCV() {
-		  var show = document.getElementById("pdf");
-		  show.innerHTML = '<p><a href="./docs/resume.pdf">(download as PDF)</a></p> <p><img src="./images/resume.png" width=50% height=50% /></p>';
-		  flag = false;
-		}
+    <aside><a href="http://simpleicons.org" target="_blank">icons</a></aside>
+    <footer>&nbsp;</footer>
 
-		function hideCV() {
-		  var show = document.getElementById("pdf");
-		  show.innerHTML = '';
-		  flag = true;
-		}
-		// toggles visibility of element
-		// almost positive there's a better way to do this
-		function toggle() {
-		  if (flag)
-		     loadCV();
-		  else
-		     hideCV();
-		}
-
-		</script>
-
-		<section id="cv">
-		   <a href="#" onclick="toggle()">resume</a>
-		   <p id ="pdf"></p>
-		</section>
-
-		<section id="exit">
-			<ul>
-				<li class="linkedin"><a href="http://www.linkedin.com/pub/nicole-montano/51/b91/998" target="_blank"><img src='./images/linkedin-128.png' alt="linkedin" /></a></li>
-				<li class="github"><a href="http://github.com/nicolemon" target="_blank"><img src='./images/github-128.png' alt="github" /></a></li>
-				<li class="lastfm"><a href="http://last.fm/user/nicolysis" target="_blank"><img src='./images/lastfm-128.png' alt="last.fm" /></a></li>
-				<li class="goodreads"><a href="http://www.goodreads.com/user/show/4608396-nicole" target="_blank"><img src='./images/goodreads-128.png' alt="goodreads" /></a></li>
-				<li class="twitter"><a href="http://www.twitter.com/nicolysis" target="_blank"><img src='./images/twitter-128.png' alt="twitter" /></a></li>
-			</ul>
-		</section>
-
-		<aside><a href="http://simpleicons.org" target="_blank">icons</a></aside>
-		<footer>&nbsp;</footer>
-
-	</body>
+  </body>
 </html>
