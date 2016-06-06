@@ -4,102 +4,107 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 30px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 30px;
 }
 
 body {
-	background-color: #FAF7F5;
+  background-color: #FAF7F5;
   color: #000;
-	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	line-height: 1.2em;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
 }
 
 a, a:link, a:visited, a:hover {
-	background-color: inherit;
+  background-color: inherit;
   color: inherit;
-	font-family: inherit;
-	font-size: inherit;
-	text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+#content {
+  width: 100%;
+  position: fixed;
+  top: 1.2em;
+  bottom: 1.2em;
+
 }
 
 #exit {
-	margin: 2.4em; /* always that much space around exit element */
-	display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
+  text-align: center;
+  position: relative;
+  top: 40%;
 }
 
 #exit li {
-	background-color: white;
-	display: inline;
+  display: inline;
   font-size:128px;
-	list-style-type: none;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-#exit li.linkedin a:hover {
-	background-color: #0077B5;
-}
-
-#exit li.twitter a:hover {
-	background-color: #55ACEE;
-}
-
-#exit li.lastfm a:hover {
-	background-color: #D51007;
-}
-
-#exit li.goodreads a:hover {
-	background-color: #663300;
-}
-
-#exit li.github a:hover {
-	background-color: #181717;
-}
-
-@keyframes exitchange {
-	from {background-color: #000000;}
-	to {left: inherit;}
-}
-
-@-webkit-keyframes exitchange {
-	from {background-color: #000000;}
-	to {background-color: inherit;}
+  list-style-type: none;
 }
 
 #exit li a, a:link, a:visited {
-	background-color: #000000;
-	transition: background-color 1s;
-	-webkit-transition: background-color 1s;
+  background-color: #000;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+}
+
+
+#exit li.linkedin a:hover {
+  background-color: #0077B5;
+}
+
+#exit li.twitter a:hover {
+  background-color: #55ACEE;
+}
+
+#exit li.lastfm a:hover {
+  background-color: #D51007;
+}
+
+#exit li.goodreads a:hover {
+  background-color: #663300;
+}
+
+#exit li.github a:hover {
+  background-color: #181717;
+}
+
+@keyframes exitchange {
+  from {background-color: #000000;}
+  to {left: inherit;}
+}
+
+@-webkit-keyframes exitchange {
+  from {background-color: #000000;}
+  to {background-color: inherit;}
 }
 
 #aside {
-	width: 100%;
+  width: 100%;
   position: fixed;
   bottom: 2.2em;
-  right: 2.2em;
-	font-size: 50%;
-	text-align: right;
+  font-size: 50%;
+  text-align: right;
 }
 
 #aside a {
+  padding: 1.0em;
   background-color: inherit;
-  color: #inherit;
+  color: inherit;
 }
 
 nav, footer {
-	position: fixed;
-	width: 100%;
-	background-color: #000000;
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
   color: #FFFFFF;
-	text-align: center;
-	font-size: 70%;
-	z-index: 1;
+  text-align: center;
+  font-size: 70%;
+  z-index: 1;
 }
 
 nav {
@@ -107,5 +112,5 @@ nav {
 }
 
 footer {
-	bottom: 0px;
+  bottom: 0px;
 }
