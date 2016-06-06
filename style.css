@@ -74,8 +74,8 @@ a, a:link, a:visited, a:hover {
 
 #exit li a, a:link, a:visited {
 	background-color: #000000;
-	transition: background-color 2s;
-	-webkit-transition: background-color 2s;
+	transition: background-color 1s;
+	-webkit-transition: background-color 1s;
 }
 
 #aside {
