@@ -30,7 +30,10 @@ a, a:link, a:visited, a:hover {
   position: fixed;
   top: 1.2em;
   bottom: 1.2em;
+}
 
+p {
+  padding-top: 15px;
 }
 
 #exit {
