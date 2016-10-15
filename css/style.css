@@ -1,0 +1,156 @@
+
+/* hi */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/* whitespace */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  line-height: 1.2em;
+}
+
+/* text */
+
+body { 
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+}
+
+/* colors */
+
+body {
+  background-color: #FAF7F5;
+  color: #000;
+}
+
+/* unorganized ribble rabble */
+
+a, a:link, a:visited, a:hover {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+p { padding-top: 15px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+  font-weight: 800;
+}
+
+h1 { font-size: 200%; }
+
+h2 { font-size: 150%; }
+
+h3 { font-size: 125%; }
+
+h4 { font-size: 112%; }
+
+h5 { font-size: 100%; }
+
+h6 { 
+  font-size: 70%;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#container {
+  width: 100%;
+  overflow-y: auto;
+  position: fixed;
+  top: 1.2em;
+  bottom: 1.2em;
+}
+
+#content {
+  width: 60%;
+  font-size: 18px;
+  text-align: justify;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+}
+
+#content a {
+  text-decoration: underline;
+}
+
+#content li {
+  list-style-position: inside;
+}
+
+#exit {
+  overflow: hidden;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#exit li {
+  display: inline;
+  font-size:128px;
+  list-style-type: none;
+}
+
+#exit li a, #exit a:link, #exit a:visited {
+  background-color: #000;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+}
+
+
+#exit li.linkedin a:hover { background-color: #0077B5; }
+
+#exit li.twitter a:hover { background-color: #55ACEE; }
+
+#exit li.lastfm a:hover { background-color: #D51007; }
+
+#exit li.goodreads a:hover { background-color: #663300; }
+
+#exit li.github a:hover { background-color: #181717; }
+
+@keyframes exitchange {
+  from {background-color: #000000;}
+  to {left: inherit;}
+}
+
+@-webkit-keyframes exitchange {
+  from {background-color: #000000;}
+  to {background-color: inherit;}
+}
+
+#aside {
+  width: 100%;
+  position: fixed;
+  bottom: 2.2em;
+  font-size: 50%;
+  text-align: right;
+}
+
+#aside a {
+  padding: 1.0em;
+  background-color: inherit;
+  color: inherit;
+}
+
+nav, footer {
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 70%;
+  z-index: 1;
+}
+
+nav { top: 0px; }
+
+footer { bottom: 0px; }
