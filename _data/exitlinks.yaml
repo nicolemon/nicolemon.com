@@ -2,11 +2,11 @@
   url: https://www.linkedin.com/in/nicolemon
 - name: github
   url: https://github.com/nicolemon
-- name: lastfm
-  url: https://www.last.fm/user/nicolysis
-- name: goodreads
-  url: https://www.goodreads.com/nicolemon
 - name: twitter
   url: https://twitter.com/nicolysis
+- name: goodreads
+  url: https://www.goodreads.com/nicolemon
+- name: lastfm
+  url: https://www.last.fm/user/nicolysis
 - name: trakt
   url: https://trakt.tv/users/nicolemon
