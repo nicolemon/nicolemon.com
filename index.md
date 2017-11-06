@@ -1,6 +1,13 @@
 ---
+layout: default
 title: Nicole A Montano
-layout: home
 
 ---
 
+<div id="exit">
+<ul>
+{% for item in site.data.exitlinks %}
+    <li class="{{ item.name }}"><a href="{{ item.url }}"><svg class="{{ item.name }}"></svg></a></li>
+{% endfor %}
+</ul>
+</div>

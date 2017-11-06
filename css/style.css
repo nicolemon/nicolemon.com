@@ -46,6 +46,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 200%; }
+h1.name {
+  line-height: 1.5em;
+  text-align: center;
+  font-style: italic;
+  text-transform: capitalize;
+}
 
 h2 { font-size: 150%; }
 
@@ -96,34 +102,65 @@ h6 {
 
 #exit li {
   display: inline;
-  font-size:128px;
   list-style-type: none;
 }
 
-#exit li a, #exit a:link, #exit a:visited {
-  background-color: #000;
+#exit li svg {
   transition: background-color 1s;
   -webkit-transition: background-color 1s;
 }
 
+#exit li svg {
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  padding: 10px;
+  margin: 10px;
+}
 
-#exit li.linkedin a:hover { background-color: #0077B5; }
+#exit li.linkedin svg {
+  mask: url('/images/linkedin.svg');
+  -webkit-mask: url('/images/linkedin.svg');
+}
+#exit li.linkedin svg:hover { background-color: #0077B5; }
 
-#exit li.twitter a:hover { background-color: #55ACEE; }
+#exit li.twitter svg {
+  mask: url('/images/twitter.svg');
+  -webkit-mask: url('/images/twitter.svg');
+}
+#exit li.twitter svg:hover { background-color: #55ACEE; }
 
-#exit li.lastfm a:hover { background-color: #D51007; }
+#exit li.lastfm svg {
+  mask: url('/images/lastfm.svg');
+  -webkit-mask: url('/images/lastfm.svg');
+}
+#exit li.lastfm svg:hover { background-color: #D51007; }
 
-#exit li.goodreads a:hover { background-color: #663300; }
+#exit li.goodreads svg {
+  mask: url('/images/goodreads.svg');
+  -webkit-mask: url('/images/goodreads.svg');
+}
+#exit li.goodreads svg:hover { background-color: #663300; }
 
-#exit li.github a:hover { background-color: #181717; }
+#exit li.github svg {
+  mask: url('/images/github.svg');
+  -webkit-mask: url('/images/github.svg');
+}
+#exit li.github svg:hover { background-color: #181717; }
+
+#exit li.trakt svg {
+  mask: url('/images/trakt.svg');
+  -webkit-mask: url('/images/trakt.svg');
+}
+#exit li.trakt svg:hover { background-color: #ED1C24; }
 
 @keyframes exitchange {
-  from {background-color: #000000;}
+  from {background-color: #000;}
   to {left: inherit;}
 }
 
 @-webkit-keyframes exitchange {
-  from {background-color: #000000;}
+  from {background-color: #000;}
   to {background-color: inherit;}
 }
 
