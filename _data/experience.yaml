@@ -1,0 +1,12 @@
+- loc: "Cisco Systems - San Jose, CA"
+  roles:
+      - role: "Software Engineer"
+        date: "2016 - Present"
+        tasks:
+            - "Re-engineered testing infrastructure for new product, reducing redundant code and allowing for higher granularity of control for dev testers"
+            - "Led team adoption of good coding practices, including regular code review and effective source control"
+      - role: "Software Engineer Intern"
+        date: "Summer 2015"
+        tasks:
+            - "Wrote Python script automating the collection of statistics and configuration details of customer data into spreadsheet"
+            - "Setup and configure virtual machines to emulate LTE architecture on Cisco Unified Computing System"
