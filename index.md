@@ -4,7 +4,7 @@ title: Nicole A Montano
 
 ---
 
-I'm a software engineer in San Jose, California. I like to learn things. Sometimes I do stuff, too.
+{{ site.data.about.blurb }}
 
 <div id="exit">
 <ul>
