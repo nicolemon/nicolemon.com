@@ -2,19 +2,25 @@
 
 <html>
   <head>
-    <title>{{ page.title }}</title>
+    <title>{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
     <link href="{{ "assets/main.css" | relative_url }}" rel="stylesheet" type="text/css">
   </head>
   <body>
 
-    <nav>&nbsp;</nav>
+    <nav class='right'>
+      {% for sitepage in site.pages %}
+        {% if sitepage.title %}
+          <li><a href="{{ sitepage.url }}">{{ sitepage.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </nav>
     <div id="container">
-      <h1 class="name center">{{ site.data.about.name }}</h1>
+      <h1 class="name center"><a href="{{ site.url }}">{{ site.data.about.name }}</a></h1>
       <div id="content">
         {{ content }}
       </div>
     </div>
-    <footer>&nbsp;</footer>
+    <footer><a href="{{ site.github_project | prepend: "https://github.com/" }}">i made dis</a></footer>
 
   </body>
 </html>
