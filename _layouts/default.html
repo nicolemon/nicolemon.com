@@ -11,6 +11,8 @@
       {% for sitepage in site.pages %}
         {% if sitepage.title %}
           <li><a href="{{ sitepage.url }}">{{ sitepage.title }}</a></li>
+        {% else %}
+          &nbsp;
         {% endif %}
       {% endfor %}
     </nav>
