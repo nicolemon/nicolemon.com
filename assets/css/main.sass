@@ -1,0 +1,176 @@
+---
+---
+
+@import "{{ site.stylescheme }}"
+
+/* whitespace */
+
+*
+  margin: 0
+  padding: 0
+  border: 0
+body
+  line-height: 1.2em
+
+/* text */
+
+body
+  font-family: $serif
+  font-size: 24px
+
+/* colors */
+
+body
+  background-color: $bg
+  color: $fg
+
+/* unorganized ribble rabble */
+
+a, a:link, a:visited, a:hover
+  color: inherit
+  font-family: inherit
+  font-size: inherit
+  text-decoration: none
+p
+  padding-top: 15px
+
+.center
+  text-align: center
+.right
+  text-align: right
+
+h1, h2, h3, h4, h5, h6
+  font-family: $sansserif
+  font-weight: 800
+h1
+  font-size: 200%
+h1.name
+  line-height: 1.5em
+  text-transform: capitalize
+h2
+  font-size: 150%
+h3
+  font-size: 125%
+h4
+  font-size: 112%
+h5
+  font-size: 100%
+h6
+  font-size: 70%
+  text-transform: uppercase
+  letter-spacing: 3px
+
+#container
+  width: 100%
+  overflow-y: auto
+  position: fixed
+  top: 1.2em
+  bottom: 1.2em
+
+#content
+  width: 60%
+  font-size: 18px
+  text-align: justify
+  position: absolute
+  left: 20%
+  right: 20%
+#content a
+  text-decoration: underline
+#content li
+  list-style-position: inside
+  margin-left: 15px
+#content ul li
+  list-style-type: circle
+
+#exit
+  overflow: hidden
+  text-align: center
+  margin-top: 15px
+  margin-bottom: 15px
+#exit li
+  display: inline
+  list-style-type: none
+#exit li svg
+  transition: background-color 1s
+  -webkit-transition: background-color 1s
+#exit li svg
+  width: 32px
+  height: 32px
+  background-color: $black
+  padding: 10px
+  margin: 10px
+
+#exit li.linkedin svg
+  mask: url('/assets/linkedin.svg')
+  -webkit-mask: url('/assets/linkedin.svg')
+#exit li.linkedin svg:hover
+  background-color: $linkedin
+
+#exit li.twitter svg
+  mask: url('/assets/twitter.svg')
+  -webkit-mask: url('/assets/twitter.svg')
+#exit li.twitter svg:hover
+  background-color: $twitter
+
+#exit li.lastfm svg
+  mask: url('/assets/lastfm.svg')
+  -webkit-mask: url('/assets/lastfm.svg')
+#exit li.lastfm svg:hover
+  background-color: $lastfm
+
+#exit li.goodreads svg
+  mask: url('/assets/goodreads.svg')
+  -webkit-mask: url('/assets/goodreads.svg')
+#exit li.goodreads svg:hover
+  background-color: $goodreads
+
+#exit li.github svg
+  mask: url('/assets/github.svg')
+  -webkit-mask: url('/assets/github.svg')
+#exit li.github svg:hover
+  background-color: $github
+
+#exit li.trakt svg
+  mask: url('/assets/trakt.svg')
+  -webkit-mask: url('/assets/trakt.svg')
+#exit li.trakt svg:hover
+  background-color: $trakt
+
+@keyframes exitchange
+  from
+    background-color: $black
+  to
+    left: inherit
+@-webkit-keyframes exitchange
+  from
+    background-color: $black
+  to
+    background-color: inherit
+
+#aside
+  width: 100%
+  position: fixed
+  bottom: 2.2em
+  font-size: 50%
+  text-align: right
+#aside a
+  padding: 1.0em
+  background-color: inherit
+  color: inherit
+
+nav, footer
+  font-family: $sansserif
+  position: fixed
+  width: 100%
+  background-color: $black
+  color: $white
+  text-align: center
+  font-size: 70%
+  z-index: 1
+nav
+  top: 0px
+nav li
+  display: inline
+  list-style-type: none
+footer
+  bottom: 0px
