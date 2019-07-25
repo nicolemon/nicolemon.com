@@ -11,7 +11,7 @@
 
       gtag('config', 'UA-55055506-2');
     </script>
-    <title>{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <link href="{{ "assets/css/main.css" | relative_url }}" rel="stylesheet" type="text/css">
   </head>
   <body>
