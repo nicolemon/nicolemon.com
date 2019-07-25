@@ -1,3 +1,5 @@
+- name: gitea
+  url: https://code.nicolysis.net
 - name: linkedin
   url: https://www.linkedin.com/in/nicolemon
 - name: github
