@@ -8,13 +8,7 @@
 $bg: $silver
 $fg: $black
 
-$linkedin: #0077B5
-$twitter: #55ACEE
-$lastfm: #D51007
-$goodreads: #663300
-$github: #181717
-$trakt: #ED1C24
-$gitea: #6CC644
+$exitlinks: ("linkedin": #0077B5, "twitter": #55ACEE, "lastfm": #D51007, "goodreads": #663300, "github": #181717, "trakt": #ED1C24, "gitea": #6CC644, "keybase": #33A0FF)
 
 /* whitespace */
 
@@ -123,47 +117,12 @@ pre
   padding: 10px
   margin: 10px
 
-#exit li.linkedin svg
-  mask: url('/assets/linkedin.svg')
-  -webkit-mask: url('/assets/linkedin.svg')
-#exit li.linkedin svg:hover
-  background-color: $linkedin
-
-#exit li.twitter svg
-  mask: url('/assets/twitter.svg')
-  -webkit-mask: url('/assets/twitter.svg')
-#exit li.twitter svg:hover
-  background-color: $twitter
-
-#exit li.lastfm svg
-  mask: url('/assets/lastfm.svg')
-  -webkit-mask: url('/assets/lastfm.svg')
-#exit li.lastfm svg:hover
-  background-color: $lastfm
-
-#exit li.goodreads svg
-  mask: url('/assets/goodreads.svg')
-  -webkit-mask: url('/assets/goodreads.svg')
-#exit li.goodreads svg:hover
-  background-color: $goodreads
-
-#exit li.github svg
-  mask: url('/assets/github.svg')
-  -webkit-mask: url('/assets/github.svg')
-#exit li.github svg:hover
-  background-color: $github
-
-#exit li.trakt svg
-  mask: url('/assets/trakt.svg')
-  -webkit-mask: url('/assets/trakt.svg')
-#exit li.trakt svg:hover
-  background-color: $trakt
-
-#exit li.gitea svg
-  mask: url('/assets/gitea.svg')
-  -webkit-mask: url('/assets/gitea.svg')
-#exit li.gitea svg:hover
-  background-color: $gitea
+@each $exitli, $color in $exitlinks
+  #exit li.#{$exitli} svg
+    mask: url("/assets/#{$exitli}.svg")
+    -webkit-mask: url("/assets/#{$exitli}.svg")
+  #exit li.#{$exitli} svg:hover
+    background-color: $color
 
 @keyframes exitchange
   from

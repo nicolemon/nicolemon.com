@@ -1,3 +1,5 @@
+- name: keybase
+  url: https://keybase.io/nicolemon
 - name: gitea
   url: https://code.nicolysis.net
 - name: linkedin
