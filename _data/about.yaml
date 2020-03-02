@@ -1,5 +1,5 @@
 name: Nicole A Montano
 blurb: "I'm a software engineer in San Jose, California. I like to learn things. Sometimes I do stuff, too."
 interests: [learning, technology, reading, beer, pilates, animals, movies, music, motorcycles, fountain pens, whiskey, Dallas Cowboys]
-languages: [Python, Java, C/C++, SQL, Haskell]
-tools: [git, vim, keyboard]
+languages: [Python, "*nix shell", Java, C/C++, Haskell]
+tools: [docker, ansible, jenkins, SQL, git, vim, keyboard]

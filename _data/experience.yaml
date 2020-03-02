@@ -1,12 +1,29 @@
-- loc: "Cisco Systems - San Jose, CA"
+- loc: "Cisco Systems - San Jose CA"
   roles:
       - role: "Software Engineer"
-        date: "2016 - Present"
+        date: "07/2016 - Present"
         tasks:
-            - "Re-engineered testing infrastructure for new product, reducing redundant code and allowing for higher granularity of control for dev testers"
+            - "Re-engineered testing infrastructure for new product, reducing redundant code and allowing for higher granularity of control for dev testers - enabled testers to implement new test cases with little coding overhead"
+            - "Contribute to test automation framework for Cisco IOS build images at multiple stages in release cycle - reduced release timelines by 50%, internally found defects by 34%, and customer found defects by 26% in first year of use"
+            - "Create Docker containers of automation backend for streamlined provisioning and deployment on fresh machines and AWS instances"
+            - "Create web app to automate running, collection, and display of build image performance on customer network profiles"
             - "Led team adoption of good coding practices, including regular code review and effective source control"
       - role: "Software Engineer Intern"
         date: "Summer 2015"
         tasks:
-            - "Wrote Python script automating the collection of statistics and configuration details of customer data into spreadsheet"
-            - "Setup and configure virtual machines to emulate LTE architecture on Cisco Unified Computing System"
+            - "Wrote Python script extracting needed configuration details for a variety of gateway types from larget text files and exporting to XLSX file"
+            - "Setup and configure virtual machienes on Cisco unified computer servers to emulate LTE architecture"
+
+- loc: "Alamo Drafthouse - Dallas TX"
+  roles:
+    - role: "Bartender"
+      date: "12/2013 - 12/2015"
+      tasks:
+        - "Planes"
+
+- loc: "Alamo Drafthouse - Austin TX"
+  roles:
+    - role: "Bartender"
+      date: "04/2011 - 08/2012"
+      tasks:
+        - "Trains"
