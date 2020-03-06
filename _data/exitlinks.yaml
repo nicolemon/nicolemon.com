@@ -1,11 +1,13 @@
+- name: linkedin
+  url: https://www.linkedin.com/in/nicolemon
 - name: keybase
   url: https://keybase.io/nicolemon
 - name: gitea
   url: https://code.nicolysis.net
-- name: linkedin
-  url: https://www.linkedin.com/in/nicolemon
 - name: github
   url: https://github.com/nicolemon
+- name: exercism
+  url: https://exercism.io/profiles/nicolemon
 - name: twitter
   url: https://twitter.com/nicolysis
 - name: goodreads
