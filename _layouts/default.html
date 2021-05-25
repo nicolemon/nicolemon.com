@@ -16,22 +16,22 @@
   </head>
   <body>
 
-    <nav class='right'>
-      {% for sitepage in site.pages %}
-        {% if sitepage.title %}
-          <li><a href="{{ sitepage.url }}">{{ sitepage.title }}</a></li>
-        {% else %}
-          &nbsp;
-        {% endif %}
-      {% endfor %}
-    </nav>
     <div id="container">
       <h1 class="name center"><a href="{{ site.url }}">{{ site.data.about.name }}</a></h1>
-      <div id="content">
+      <div class="center" id="content">
         {{ content }}
+        <div id="exit">
+        <ul>
+        {% for item in site.data.exitlinks %}
+        <li class="{{ item.name }}"><a href="{{ item.url }}" alt="{{ item.name }}">{{
+                item.name | capitalize }}</svg></a></li>
+        {% endfor %}
+        </ul>
+        </div>
+
       </div>
     </div>
-    <footer>&nbsp;</footer>
+
 
   </body>
 </html>
