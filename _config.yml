@@ -1,8 +1,8 @@
 title: Nicole A Montano
 url: https://nicolemon.com
 github_project: nicolemon/nicolemon.com
-colorscheme: bright-light
-font-stack: muli
+colorscheme: default-light
+font-stack: josefin
 markdown: kramdown
 highlighter: rouge
 sass:

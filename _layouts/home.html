@@ -3,12 +3,5 @@ layout: default
 
 ---
 
-<p class="center">{{ site.data.about.blurb }}</p>
+<p>{{ site.data.about.blurb }}</p>
 
-<div id="exit">
-<ul>
-{% for item in site.data.exitlinks %}
-<li class="{{ item.name }}"><a href="{{ item.url }}" alt="{{ item.name }}"><svg class="{{ item.name }}"></svg></a></li>
-{% endfor %}
-</ul>
-</div>
