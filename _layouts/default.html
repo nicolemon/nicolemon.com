@@ -23,8 +23,7 @@
         <div id="exit">
         <ul>
         {% for item in site.data.exitlinks %}
-        <li class="{{ item.name }}"><a href="{{ item.url }}" alt="{{ item.name }}">{{
-                item.name | capitalize }}</svg></a></li>
+        <li class="{{ item.name }}"><a rel="me" href="{{ item.url }}" alt="{{ item.name }}">{{ item.name | capitalize }}</svg></a></li>
         {% endfor %}
         </ul>
         </div>
